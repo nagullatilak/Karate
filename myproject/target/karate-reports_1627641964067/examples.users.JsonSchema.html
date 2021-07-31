@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>examples.users.JsonSchema</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-07-30 04:12:54 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>&quot;JSON Schema&quot;</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/users/JsonSchema.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Json Schema</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">&quot;JSON Schema&quot;</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>859</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in/api/2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">16:12:49.773 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">829</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:12:50.103 request:
+1 &gt; GET https://reqres.in/api/2
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:12:50.664 response time in milliseconds: 557
+1 &lt; 200
+1 &lt; Date: Fri, 30 Jul 2021 10:42:50 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-powered-by: Express
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;2c1-N6Rqerxquq2kgQhL51EiSg4x0R8&quot;
+1 &lt; via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 318
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=A1jv9RTpzQd6FjrN5LEbC1qZbod0scoFN7HO9MNG7afeegGATilV4NkKFABNi9jnnKo0g7Bs64nzGKJTA5hbZuPYdvwdMMekwz%2BL9lwrSMiyayTGPF82rH6VXWU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 676dfb8aba964aed-HYD
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
+{&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;data&quot;:[{&quot;color&quot;:&quot;#98B2D1&quot;,&quot;year&quot;:2000,&quot;name&quot;:&quot;cerulean&quot;,&quot;id&quot;:1,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;color&quot;:&quot;#C74375&quot;,&quot;year&quot;:2001,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;id&quot;:2,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;color&quot;:&quot;#BF1932&quot;,&quot;year&quot;:2002,&quot;name&quot;:&quot;true red&quot;,&quot;id&quot;:3,&quot;pantone_value&quot;:&quot;19-1664&quot;},{&quot;color&quot;:&quot;#7BC4C4&quot;,&quot;year&quot;:2003,&quot;name&quot;:&quot;aqua sky&quot;,&quot;id&quot;:4,&quot;pantone_value&quot;:&quot;14-4811&quot;},{&quot;color&quot;:&quot;#E2583E&quot;,&quot;year&quot;:2004,&quot;name&quot;:&quot;tigerlily&quot;,&quot;id&quot;:5,&quot;pantone_value&quot;:&quot;17-1456&quot;},{&quot;color&quot;:&quot;#53B0AE&quot;,&quot;year&quot;:2005,&quot;name&quot;:&quot;blue turquoise&quot;,&quot;id&quot;:6,&quot;pantone_value&quot;:&quot;15-5217&quot;}],&quot;page&quot;:1,&quot;total_pages&quot;:2,&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response == &#39;#object&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">26</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def jsonSchemaExpected =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7">{
+    &quot;data&quot;:{
+        &quot;id&quot;:&#39;#number&#39;,
+        &quot;email&quot;:&#39;#string&#39;,
+        &quot;first_name&quot;:&#39;#string&#39;,
+        &quot;last_name&quot;:&#39;#string&#39;,
+        &quot;avatar&quot; : &#39;#string&#39;
+    },
+    &quot;support&quot; :{
+        &quot;url&quot; : &quot;#string&quot;,
+        &quot;text&quot; : &quot;#string&quot;
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref failed">23</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match response ==jsonSchemaExpected</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">16:12:50.708 classpath:examples/users/JsonSchema.feature:23
+* match response ==jsonSchemaExpected
+match failed: EQUALS
+  $ | not equal | actual has 4 more key(s) than expected - {&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;page&quot;:1,&quot;total_pages&quot;:2} (MAP:MAP)
+  {&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;data&quot;:[{&quot;color&quot;:&quot;#98B2D1&quot;,&quot;year&quot;:2000,&quot;name&quot;:&quot;cerulean&quot;,&quot;id&quot;:1,&quot;pantone_value&quot;:&quot;15-4020&quot;},{&quot;color&quot;:&quot;#C74375&quot;,&quot;year&quot;:2001,&quot;name&quot;:&quot;fuchsia rose&quot;,&quot;id&quot;:2,&quot;pantone_value&quot;:&quot;17-2031&quot;},{&quot;color&quot;:&quot;#BF1932&quot;,&quot;year&quot;:2002,&quot;name&quot;:&quot;true red&quot;,&quot;id&quot;:3,&quot;pantone_value&quot;:&quot;19-1664&quot;},{&quot;color&quot;:&quot;#7BC4C4&quot;,&quot;year&quot;:2003,&quot;name&quot;:&quot;aqua sky&quot;,&quot;id&quot;:4,&quot;pantone_value&quot;:&quot;14-4811&quot;},{&quot;color&quot;:&quot;#E2583E&quot;,&quot;year&quot;:2004,&quot;name&quot;:&quot;tigerlily&quot;,&quot;id&quot;:5,&quot;pantone_value&quot;:&quot;17-1456&quot;},{&quot;color&quot;:&quot;#53B0AE&quot;,&quot;year&quot;:2005,&quot;name&quot;:&quot;blue turquoise&quot;,&quot;id&quot;:6,&quot;pantone_value&quot;:&quot;15-5217&quot;}],&quot;page&quot;:1,&quot;total_pages&quot;:2,&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;}}
+  {&quot;data&quot;:{&quot;id&quot;:&quot;#number&quot;,&quot;email&quot;:&quot;#string&quot;,&quot;first_name&quot;:&quot;#string&quot;,&quot;last_name&quot;:&quot;#string&quot;,&quot;avatar&quot;:&quot;#string&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;#string&quot;,&quot;text&quot;:&quot;#string&quot;}}
+
+
+classpath:examples/users/JsonSchema.feature:23
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

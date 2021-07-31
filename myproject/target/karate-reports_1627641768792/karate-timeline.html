@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-5","id":1},{"content":"pool-1-thread-4","id":2},{"content":"pool-1-thread-2","id":3},{"content":"pool-1-thread-3","id":4},{"content":"pool-1-thread-1","id":5}];
+var items = [{"id":1,"group":1,"content":"examples\/users\/users[1:7]","start":1627640834252,"end":1627640836176,"title":"examples\/users\/users[1:7] 15:57:14.252-15:57:16.176 get all users and then get the first user by id"},{"id":2,"group":2,"content":"examples\/users\/users[2:18]","start":1627640834443,"end":1627640836307,"title":"examples\/users\/users[2:18] 15:57:14.443-15:57:16.307 create a user and then get it by id"},{"id":3,"group":3,"content":"examples\/users\/GetCallMethod[1:7]","start":1627640834251,"end":1627640835643,"title":"examples\/users\/GetCallMethod[1:7] 15:57:14.251-15:57:15.643 get the details of user 2","className":"failed"},{"id":4,"group":4,"content":"examples\/users\/GetCallMethod[2:13]","start":1627640834254,"end":1627640836912,"title":"examples\/users\/GetCallMethod[2:13] 15:57:14.254-15:57:16.912 Create a Person","className":"failed"},{"id":5,"group":5,"content":"examples\/users\/FileUpload[1:5]","start":1627640834252,"end":1627640837753,"title":"examples\/users\/FileUpload[1:5] 15:57:14.252-15:57:17.753 File uplaod testcase","className":"failed"},{"id":6,"group":2,"content":"examples\/users\/GraphqlDemo[1:5]","start":1627640834251,"end":1627640834421,"title":"examples\/users\/GraphqlDemo[1:5] 15:57:14.251-15:57:14.421 \"Getting data\"","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

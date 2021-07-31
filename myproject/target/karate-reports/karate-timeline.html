@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-2","id":1},{"content":"pool-1-thread-1","id":2},{"content":"pool-1-thread-4","id":3},{"content":"pool-1-thread-5","id":4},{"content":"pool-1-thread-3","id":5}];
+var items = [{"id":1,"group":1,"content":"examples\/users\/JsonSchema[1:3]","start":1627646979142,"end":1627646980643,"title":"examples\/users\/JsonSchema[1:3] 17:39:39.142-17:39:40.643 \"JSON Schema\"","className":"failed"},{"id":2,"group":2,"content":"examples\/users\/CallOnce[1:3]","start":1627646978949,"end":1627646979126,"title":"examples\/users\/CallOnce[1:3] 17:39:38.949-17:39:39.126"},{"id":3,"group":1,"content":"examples\/users\/CallOnce[2:6]","start":1627646978950,"end":1627646979128,"title":"examples\/users\/CallOnce[2:6] 17:39:38.950-17:39:39.128","className":"failed"},{"id":4,"group":2,"content":"examples\/users\/users[1:7]","start":1627646979217,"end":1627646981054,"title":"examples\/users\/users[1:7] 17:39:39.217-17:39:41.054 get all users and then get the first user by id"},{"id":5,"group":1,"content":"examples\/users\/users[2:18]","start":1627646980650,"end":1627646981627,"title":"examples\/users\/users[2:18] 17:39:40.650-17:39:41.627 create a user and then get it by id"},{"id":6,"group":3,"content":"examples\/users\/GetCallMethod[1:7]","start":1627646978946,"end":1627646981054,"title":"examples\/users\/GetCallMethod[1:7] 17:39:38.946-17:39:41.054 get the details of user 2","className":"failed"},{"id":7,"group":4,"content":"examples\/users\/GetCallMethod[2:13]","start":1627646978947,"end":1627646981723,"title":"examples\/users\/GetCallMethod[2:13] 17:39:38.947-17:39:41.723 Create a Person","className":"failed"},{"id":8,"group":5,"content":"examples\/users\/FileUpload[1:5]","start":1627646978948,"end":1627646982796,"title":"examples\/users\/FileUpload[1:5] 17:39:38.948-17:39:42.796 File uplaod testcase","className":"failed"},{"id":9,"group":2,"content":"examples\/users\/GraphqlDemo[1:5]","start":1627646979142,"end":1627646979193,"title":"examples\/users\/GraphqlDemo[1:5] 17:39:39.142-17:39:39.193 \"Getting data\"","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

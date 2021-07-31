@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-5","id":1},{"content":"pool-1-thread-4","id":2},{"content":"pool-1-thread-2","id":3},{"content":"pool-1-thread-3","id":4},{"content":"pool-1-thread-1","id":5}];
+var items = [{"id":1,"group":1,"content":"examples\/users\/JsonSchema[1:3]","start":1627641964921,"end":1627641965910,"title":"examples\/users\/JsonSchema[1:3] 16:16:04.921-16:16:05.910 \"JSON Schema\"","className":"failed"},{"id":2,"group":2,"content":"examples\/users\/users[1:7]","start":1627641965079,"end":1627641966174,"title":"examples\/users\/users[1:7] 16:16:05.079-16:16:06.174 get all users and then get the first user by id"},{"id":3,"group":3,"content":"examples\/users\/users[2:18]","start":1627641965913,"end":1627641966705,"title":"examples\/users\/users[2:18] 16:16:05.913-16:16:06.705 create a user and then get it by id"},{"id":4,"group":3,"content":"examples\/users\/GetCallMethod[1:7]","start":1627641964922,"end":1627641965904,"title":"examples\/users\/GetCallMethod[1:7] 16:16:04.922-16:16:05.904 get the details of user 2","className":"failed"},{"id":5,"group":4,"content":"examples\/users\/GetCallMethod[2:13]","start":1627641964922,"end":1627641967226,"title":"examples\/users\/GetCallMethod[2:13] 16:16:04.922-16:16:07.226 Create a Person","className":"failed"},{"id":6,"group":5,"content":"examples\/users\/FileUpload[1:5]","start":1627641964922,"end":1627641968733,"title":"examples\/users\/FileUpload[1:5] 16:16:04.922-16:16:08.733 File uplaod testcase","className":"failed"},{"id":7,"group":2,"content":"examples\/users\/GraphqlDemo[1:5]","start":1627641964922,"end":1627641965068,"title":"examples\/users\/GraphqlDemo[1:5] 16:16:04.922-16:16:05.068 \"Getting data\"","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

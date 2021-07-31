@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: examples.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.431 s <<< FAILURE! - in examples.ExamplesTest
+testParallel  Time elapsed: 6.424 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+match failed: EQUALS
+  $ | not equal | actual has 4 more key(s) than expected - {"per_page":6,"total":12,"page":1,"total_pages":2} (MAP:MAP)
+  {"per_page":6,"total":12,"data":[{"color":"#98B2D1","year":2000,"name":"cerulean","id":1,"pantone_value":"15-4020"},{"color":"#C74375","year":2001,"name":"fuchsia rose","id":2,"pantone_value":"17-2031"},{"color":"#BF1932","year":2002,"name":"true red","id":3,"pantone_value":"19-1664"},{"color":"#7BC4C4","year":2003,"name":"aqua sky","id":4,"pantone_value":"14-4811"},{"color":"#E2583E","year":2004,"name":"tigerlily","id":5,"pantone_value":"17-1456"},{"color":"#53B0AE","year":2005,"name":"blue turquoise","id":6,"pantone_value":"15-5217"}],"page":1,"total_pages":2,"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https://reqres.in/#support-heading"}}
+  {"data":{"id":"#number","email":"#string","first_name":"#string","last_name":"#string","avatar":"#string"},"support":{"url":"#string","text":"#string"}}
+
+
+classpath:examples/users/JsonSchema.feature:23
+no step-definition method match found for: def result =call read('CallOnce.feature@tag1')
+classpath:examples/users/CallOnce.feature:8
+match failed: EQUALS
+  $ | actual path does not exist (STRING:NUMBER)
+  '#notpresent'
+  2
+
+classpath:examples/users/GetCallMethod.feature:12
+>>>> js failed:
+01: PETCH
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "PETCH" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/users/GetCallMethod.feature:41
+status code was: 405, expected: 201, response time in milliseconds: 986, url: https://filebin.net, response: 
+
+classpath:examples/users/FileUpload.feature:10
+no step-definition method match found for: text query=
+classpath:examples/users/GraphqlDemo.feature:7 ==> expected: <0> but was: <6>
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:18)
+
