@@ -5,7 +5,7 @@ Background:
 Scenario:CRUD operations on Labels
 #Get all Labels 
     Given path 'labels'
-    And headers {Authorization:'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'}
+    And header Authorization = 'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'
     When method Get
     Then status 200
 
@@ -24,7 +24,7 @@ Given path 'labels'
 
 #Get A Label
 Given path 'labels/'+labelId
-    And headers {Authorization:'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'}
+    And header Authorization = 'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'
     When method Get
     Then status 200
     Then match response == "#object"
@@ -46,7 +46,6 @@ Given path 'labels/'+labelId
   
 #Delete a Label
 Given path 'labels/'+labelId
-    
-    And headers {Authorization:'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'}
+    And header Authorization = 'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'
     When method DELETE
     Then status 204

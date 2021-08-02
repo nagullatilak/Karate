@@ -3,7 +3,7 @@ Background:
     * url baseUrl
 Scenario: Projects
     Given path 'projects'
-    And headers {Authorization:'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'}
+    And header Authorization = 'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'
     When method Get
     Then status 200
 
@@ -22,7 +22,7 @@ Given path 'projects'
 
 #Get A Project
 Given path 'projects/'+proId
-    And headers {Authorization:'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'}
+And header Authorization = 'Bearer f37733bf81919803f8750a3c8dee04a86031fd50' 
     When method Get
     Then status 200
     Then match response == "#object"
@@ -45,13 +45,13 @@ Given path 'projects/'+proId
 #Delete a Project
 Given path 'projects/'+proId
     
-    And headers {Authorization:'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'}
+And header Authorization = 'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'
     When method DELETE
     Then status 204
 
 #Get collaborators
 Given path 'projects/2270367633/collaborators'
-    And headers {Authorization:'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'}
+    And header Authorization = 'Bearer f37733bf81919803f8750a3c8dee04a86031fd50'
     When method GET
     Then status 200
 

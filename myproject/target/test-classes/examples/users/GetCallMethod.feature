@@ -38,7 +38,7 @@ Scenario: Create a Person
             "job"  : "QA"
         }
         """
-    When method PETCH
+    Whe n method PETCH
     Then status 201
     Then match response == "#object"
     Then match response.name == "SAI"

@@ -1513,3 +1513,5 @@ classpath:examples/users/FileUpload.feature:10
 17:39:43.148 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 6 (2 remaining) classpath:examples/users/GraphqlDemo.feature
 17:39:43.207 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 6 (1 remaining) classpath:examples/users/JsonSchema.feature
 17:39:43.309 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:examples/users/users.feature
+12:46:06.858 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': classpath:GraphqlDemo.feature
+12:47:44.290 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': classpath:GraphqlDemo.feature

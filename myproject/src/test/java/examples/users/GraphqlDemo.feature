@@ -1,12 +1,11 @@
 @debug
-Feature: "Graphql Demo"
+Feature: Graphql Demo
 Background: 
-    * url "https://api.graphql.jobs/"
-Scenario:"Getting data"
+    * url 'https://api.graphql.jobs'
+Scenario:Getting data
     Given path "/"
     Given text query=
-    """
-        query{
+    """ query{
         jobs{
             id ,title
         }
